@@ -6,7 +6,7 @@ import (
 
 func main() {
 	var a, b, sum int
-	fmt.Scanf("%v\n%v", &a, &b)
+	fmt.Scan(&a, &b)
 	sum = solveMeFirst(a, b)
 	fmt.Println(sum)
 }
