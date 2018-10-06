@@ -8,11 +8,15 @@ func main() {
 	fmt.Println("Enter number of values, then the values:")
 	fmt.Println("n")
 	fmt.Println("n1 n2 n3 . . .")
+	fmt.Println("To end, enter RETURN")
 	size := readSize()
-	arr := make([]int, size)
-	readElements(arr)
-	sum := SimpleArraySum(arr)
-	fmt.Println("sum:", sum)
+	for size > 0 {
+		arr := make([]int, size)
+		readElements(arr)
+		sum := SimpleArraySum(arr)
+		fmt.Println("sum:", sum)
+		size = readSize()
+	}
 }
 
 // SimpleArraySum returns the sum of slice of integers ints
