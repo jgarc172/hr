@@ -1,7 +1,13 @@
 package main
 
-func main() {
+import (
+	"fmt"
+)
 
+func main() {
+	var arr []int
+	sum := SimpleArraySum(arr)
+	fmt.Println(sum)
 }
 
 // SimpleArraySum returns the sum of slice of integers ints
