@@ -5,9 +5,8 @@ import (
 )
 
 func main() {
-	var sum int
-	a := 4
-	b := 3
+	var a, b, sum int
+	fmt.Scanf("%v\n%v", &a, &b)
 	sum = solveMeFirst(a, b)
 	fmt.Println(sum)
 }
