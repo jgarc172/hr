@@ -5,7 +5,9 @@ import (
 )
 
 func main() {
-	var a, b, sum int
+	var sum int
+	a := 4
+	b := 3
 	sum = solveMeFirst(a, b)
 	fmt.Println(sum)
 }
