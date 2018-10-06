@@ -5,13 +5,17 @@ import (
 )
 
 func main() {
-	var arr []int
-	fmt.Println("length of arr:", len(arr))
+	var n int
+	fmt.Println("Enter number of values, then the values:")
+	fmt.Println("n")
+	fmt.Println("n1 n2 n3 . . .")
+	fmt.Scanln(&n)
+
+	arr := make([]int, n)
+	for i := 0; i < n; i++ {
+		fmt.Scan(&arr[i])
+	}
 	sum := SimpleArraySum(arr)
-	fmt.Println("sum:", sum)
-	arr = []int{1, 2, 3}
-	fmt.Println("length of arr:", len(arr))
-	sum = SimpleArraySum(arr)
 	fmt.Println("sum:", sum)
 }
 
